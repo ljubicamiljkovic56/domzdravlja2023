@@ -301,7 +301,7 @@ public class Liste {
 		}
 		
 	}
-	public void ucitajKnjzicu() {
+	public void ucitajKnjizicu() {
 		try {
 			File knjizicaFile = new File("src/fajlovi/knjizica.txt");
 			BufferedReader reader = new BufferedReader(new FileReader(knjizicaFile));
