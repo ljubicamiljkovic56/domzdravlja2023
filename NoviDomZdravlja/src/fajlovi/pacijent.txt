@@ -1,3 +1,4 @@
-Kikic|Rikic|080975756013|1|Gogoljeva 4, Novi Sad|4567899999|kiki|kiki12|1|Mile Mitic|0123
-Zika|Zikic|090870756013|1|Ivana Gundulica 10, Novi Sad|4567890|zika|zika13|1|Stanoje Markovic|0223
-Pera|Peric|101071756013|1|Pere Radovanovica 18, Novi Sad|5678990|pera14|pera14|1|Petar Petrovic|0323
+Kikic|Rikic|080975756013|1|Gogoljeva 4, Novi Sad|4567899999|kiki|kiki12|1|null|null
+Zika|Zikic|090870756013|1|Ivana Gundulica 10, Novi Sad|4567890|zika|zika13|1|null|null
+Pera|Peric|101071756013|1|Pere Radovanovica 18, Novi Sad|5678990|pera14|pera14|1|null|null
+Zivojin|Petrovic|090960756012|1|Svetosavska 9, Novi Sad|021123456|zivan|zivan45|1|null|null

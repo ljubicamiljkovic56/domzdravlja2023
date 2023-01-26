@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
@@ -41,6 +42,11 @@ public class PacijentProzor extends JFrame {
 		setSize(800, 800);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
+		JLabel background;
+		ImageIcon img = new ImageIcon(getClass().getResource("/slike/healthcentre.jpg"));
+		background = new JLabel(img);
+		background.setBounds(0,0,800,800);
+		add(background);
 		initGUI();
 		initActions();
 	}
@@ -70,8 +76,8 @@ public class PacijentProzor extends JFrame {
 			sadrzaj[i][6] = pacijent.getKorisnickoIme();
 			sadrzaj[i][7] = pacijent.getLozinka();
 			sadrzaj[i][8] = pacijent.getUloga();
-			sadrzaj[i][9] = pacijent.getIzabraniLekar().getIme().toString();
-			sadrzaj[i][10] = pacijent.getKnjizica().getBrojKnjizice().toString();
+			sadrzaj[i][9] = pacijent.getIzabraniLekar();
+			sadrzaj[i][10] = pacijent.getKnjizica();
 			
 		}
 		DefaultTableModel model = new DefaultTableModel(sadrzaj, zaglavlja);
@@ -82,6 +88,7 @@ public class PacijentProzor extends JFrame {
 		pacijentTabela.setDefaultEditor(Object.class, null);
 		JScrollPane scrollPane = new JScrollPane(pacijentTabela);
 		add(scrollPane);
+
 	}
 	@SuppressWarnings("unused")
 	private void snimiPacijenteIzTabele() {

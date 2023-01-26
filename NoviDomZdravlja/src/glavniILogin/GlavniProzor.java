@@ -1,9 +1,11 @@
 package glavniILogin;
 
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
@@ -71,8 +73,13 @@ public class GlavniProzor extends JFrame {
 		this.mainMenu.add(pacijentMenu);
 		this.mainMenu.add(mSestraMenu);
 		this.mainMenu.add(lekarMenu);
-		
 		setJMenuBar(this.mainMenu);
+		
+		JLabel background;
+		ImageIcon img = new ImageIcon(getClass().getResource("/slike/healthcentre.jpg"));
+		background = new JLabel(img);
+		background.setBounds(0,0,800,800);
+		add(background);
 	}
 	
 	private void initActions() {
@@ -90,6 +97,7 @@ public class GlavniProzor extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Knjizica prozor");
 				KnjizicaProzor kp = new KnjizicaProzor(knjizica, liste);
 				kp.setVisible(true);
 				
@@ -99,6 +107,7 @@ public class GlavniProzor extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Pacijent prozor");
 				PacijentProzor pp = new PacijentProzor(pacijent, liste);
 				pp.setVisible(true);
 			}
@@ -107,6 +116,7 @@ public class GlavniProzor extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Medicinska sestra prozor");
 				MSestraProzor mp = new MSestraProzor(mSestra,liste);
 				mp.setVisible(true);
 				
@@ -116,6 +126,7 @@ public class GlavniProzor extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
+				System.out.println("Lekar prozor");
 				LekarProzor lp = new LekarProzor(lekar, liste);
 				lp.setVisible(true);
 				
