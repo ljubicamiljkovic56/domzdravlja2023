@@ -70,8 +70,8 @@ public class PacijentProzor extends JFrame {
 			sadrzaj[i][6] = pacijent.getKorisnickoIme();
 			sadrzaj[i][7] = pacijent.getLozinka();
 			sadrzaj[i][8] = pacijent.getUloga();
-			sadrzaj[i][9] = pacijent.getIzabraniLekar();
-			sadrzaj[i][10] = pacijent.getKnjizica();
+			sadrzaj[i][9] = pacijent.getIzabraniLekar().getIme().toString();
+			sadrzaj[i][10] = pacijent.getKnjizica().getBrojKnjizice().toString();
 			
 		}
 		DefaultTableModel model = new DefaultTableModel(sadrzaj, zaglavlja);
